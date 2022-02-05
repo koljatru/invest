@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <title>Invest</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner" id="header__nav">
+        <div data-menuanchor="top">
+          <a class="logo" href="#top">
+            <picture class="logo__img">
+              <source srcset="images/logo-mobile.png" media="(max-width: 600px)">
+              <img src="images/logo.png" alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="header__info">
+          <nav class="menu">
+            <button class="menu__btn">
+              <span class="menu__btn-line"></span>
+            </button> <!-- сделано для того чтобы нарисовать бургер -->
+            <ul class="menu__list">
+              <li class="menu__list-item menu__list-item-logo">
+                <a class="menu__list-link" href="#">
+                  <img src="images/logo-mobile-white.png" alt="">
+                </a>
+              </li>
+              <li class="menu__list-item menu__list-item-mobile">
+                <a class="menu__list-link" href="#">Об инвест-советнике</a>
+              </li>
+              <li class="menu__list-item" data-menuanchor="products">
+                <a class="menu__list-link" href="#for-what">Для чего?</a>
+              </li>
+              <li class="menu__list-item" data-menuanchor="features">
+                <a class="menu__list-link" href="#for-whom">Для кого?</a>
+              </li>
+              <li class="menu__list-item" data-menuanchor="parameters">
+                <a class="menu__list-link" href="#work">Как работает?</a>
+              </li>
+              <li class="menu__list-item" data-menuanchor="questions">
+                <a class="menu__list-link" href="#tariff">Тарифы</a>
+              </li>
+              <li class="menu__list-item menu__list-item-mobile">
+                <a class="menu__list-link" href="#otzivi">Отзывы</a>
+              </li>
+              <li class="menu__list-item" data-menuanchor="contacts">
+                <a class="menu__list-link" href="#questions">Вопросы</a>
+              </li>
+              <li class="menu__list-item menu__list-item-mobile menu__list-item-email">
+                <a class="menu__list-link menu__list-link-email" href="#">stronghold@stronghld.ru</a>
+              </li>
+              <li class="menu__list-item menu__list-item-social  menu__list-item-mobile">
+                <a class="menu__list-link" href="#">
+                  <img src="images/insta-icon.png" alt="">
+                </a>
+                <a class="menu__list-link menu__list-link-social" href="#">
+                  <img src="images/telegramm-icon.png" alt="">
+                </a>
+              </li>
+              <li class="menu__list-item  menu__list-item-free menu__list-item-mobile">
+                <a class="menu__list-link menu__list-link-free" href="#">Узнать бесплатно</a>
+              </li>
+              <li class="menu__list-item  menu__list-item-mobile">
+                <a class="menu__list-link menu__list-link-enter" href="#">Войти</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__btn">Войти</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main class="main">
+      <section class="top" id="top">
+        <div class="container">
+          <div class="top__inner">
+            <div class="top__col top__col-1">
+              <h1 class="top__col-title title-1">ПОРТФЕЛЬНЫЕ
+                ИНВЕСТИЦИИ
+              </h1>
+              <h1 class="top__col-title title-1 top__col-mobile">ПОРТФЕЛЬНЫЕ
+                ИНВЕСТИЦИИ<br> ДЛЯ ВСЕХ
+              </h1>
+              <div class="top__col-box">
+                <img class="top__col-dollar" src="images/dollar-icon.png" alt="">
+                <p class="top__col-text">ОЖИДАЕМАЯ ДОХОДНОСТЬ
+                  <span>ОТ 30% ГОДОВЫХ</span> В USD
+                </p>
+              </div>
+              <a class="top__col-btn" href="#">Начать зарабатывать сейчас </a>
+            </div>
+            <div class="top__col top__col-2">
+              <img class="top__col-img" src="images/top-img.png" alt="">
+            </div>
+            <div class="top__col top__col-3">
+              <h2 class="top__col-subtitle title-1">ДЛЯ ВСЕХ</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advisor">
+        <div class="container">
+          <div class="advisor__inner">
+            <div class="advisor__content">
+              <h2 class="advisor__title title-1">онлайн-советник</h2>
+              <p class="advisor__text-subtitle">онлайн-советник AURUM покажет любому новичку:</p>
+              <p class="advisor__text-top">как с минимальными рисками составить инвестиционный портфель
+                с доходностью около 30% годовых исходя из текущей ситуации на рынке. Вам нужно сделать два простых
+                действия:
+              </p>
+            </div>
+            <div class="advisor__box">
+              <img class="advisor__box-img" src="images/stock-img.png" alt="">
+              <div class="advisor__box-mobile">
+                <p class="advisor__box-mobile-num">более <span>2500</span></p>
+                <p class="advisor__box-mobile-num-text">инвесторов работают с инвест-роботом</p>
+              </div>
+              <div class="advisor__box-actions">
+                <div class="advisor__box-actions-item box-actions-1">
+                  <h3 class="advisor__box-actions-title">указать e-mail</h3>
+                  <p class="advisor__box-actions-text">Он нужен для регистрации
+                    и создания кабинета инвестора</p>
+                </div>
+                <div class="advisor__box-actions-item box-actions-2">
+                  <h3 class="advisor__box-actions-title advisor__box-actions-red">Выбрать размер портфеля</h3>
+                  <p class="advisor__box-actions-text">Из предложенных опций, для более
+                    точного подбора акций в портфель</p>
+                </div>
+                <div class="advisor__box-actions-number">
+                  <p class="advisor__box-actions-num">более <span>2500</span></p>
+                  <p class="advisor__box-actions-num-text">инвесторов работают с инвест-роботом</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="work">
+        <div class="container">
+          <div class="work__inner">
+            <h2 class="work__title title-1">как работает сответник?</h2>
+            <div class="work__items">
+              <div class="work__item work__item-1">
+                <img class="work__item-img work__item-img-1" src="images/work-img.png" alt="">
+                <p class="work__item-text">Проанализирует и подберет
+                  15-30 акций американского фондового рынка исходя
+                  из вашего бюджета</p>
+              </div>
+              <div class="work__item work__item-2">
+                <img class="work__item-img work__item-img-2" src="images/work-img-2.png" alt="">
+                <p class="work__item-text">Покажет в вашем личном кабинете: когда и как будет происходить покупка акций
+                  для позиций в портфеле </p>
+              </div>
+            </div>
+            <h3 class="work__subtitle">Вы можете просто наблюдать за работой<br> и результатами советника, или повторять
+              его сделки</h3>
+            <p class="work__text">Действия онлайн советника не являются индивидуальными инвестиционными рекомендациями
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="promotions" id="promotion">
+        <div class="container">
+          <div class="promotions__inner">
+            <div class="promotions__box">
+              <h2 class="promotions__box-title title-1">акции<br> для вас!</h2>
+              <p class="promotions__box-text" class="">узнайте состав портфеля на котором онлайн-советник aurum
+                планирует
+                заработать 30% годовых
+              </p>
+              <a class="promotions__box-btn" href="#">Узнать бесплатно</a>
+            </div>
+            <img class="promotions__social" src="images/social.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="youare" id="for-what">
+        <div class="container">
+          <div class="youare__inner">
+            <h2 class="youare__title title-1">С нами вы</h2>
+            <div class="youare__items">
+              <div class="youare__item">
+                <img class="youare__item-img" src="images/dollar-icon.png" alt="">
+                <p class="youare__item-text"><span>ПЕРЕСТАНЕТЕ</span> ТЕРЯТЬ<br> ДЕНЬГИ НА РЫНКЕ</p>
+              </div>
+              <div class="youare__item">
+                <img class="youare__item-img" src="images/funt-iaon.png" alt="">
+                <p class="youare__item-text"><span>Будете</span> тратить на инвестиции
+                  не более 3-4 часов в неделю</p>
+              </div>
+              <div class="youare__item">
+                <img class="youare__item-img" src="images/euro-icon.png" alt="">
+                <p class="youare__item-text"><span>Будете</span> зарабатывать
+                  от 30% годовых в USD</p>
+              </div>
+              <div class="youare__item">
+                <img class="youare__item-img" src="images/you-icon.png" alt="">
+                <p class="youare__item-text"><span>Научитесь</span> управлять своим инвестиционным портфелем</p>
+              </div>
+              <div class="youare__item">
+                <img class="youare__item-img" src="images/rub-icon.png" alt="">
+                <p class="youare__item-text"><span>Сформируете</span> собственную инвестиционную стратегию</p>
+              </div>
+              <div class="youare__item">
+                <img class="youare__item-img" src="images/dollar-icon.png" alt="">
+                <p class="youare__item-text"><span>Получите</span> ответы на интересующие вопросы</p>
+              </div>
+              <div class="youare__item">
+                <img class="youare__item-img" src="images/euro-icon.png" alt="">
+                <p class="youare__item-text"><span>Поймете</span> как работает рынок</p>
+              </div>
+              <div class="youare__item">
+                <img class="youare__item-img" src="images/funt-iaon.png" alt="">
+                <p class="youare__item-text"><span>Научитесь</span> находить перспективные компании для инвестиций </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="invest" id="for-whom">
+        <div class="container">
+          <h3 class="invest__title title-1">НАШ ИНВЕСТИЦИОННЫЙ ПРОДУКТ ДЛЯ ТЕХ, кто хочет... </h3>
+          <h3 class="invest__title title-1 invest__title-mobile">stokhold ДЛЯ ТЕХ, кто хочет... </h3>
+          <div class="invest__items">
+            <div class="invest__item">
+              <img class="invest__item-img" src="images/invest-icon-1.png" alt="">
+              <p class="invest__item-text">Покупать акции известных компаний, зарабатывать
+                на этом и создать своим детям достойный капитал</p>
+            </div>
+            <div class="invest__item">
+              <img class="invest__item-img" src="images/invest-icon-2.png" alt="">
+              <p class="invest__item-text">Минимизировать риски
+                потерь при самостоятельных инвестициях на фондовом рынке</p>
+            </div>
+            <div class="invest__item">
+              <img class="invest__item-img" src="images/invest-icon-3.png" alt="">
+              <p class="invest__item-text">Достичь своих финансовых целей и выйти на новый
+                уровень жизни через успешные инвестиции</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="approach" id="approach">
+        <div class="container">
+          <div class="approach__inner">
+            <div class="approach__box">
+              <div class="approach__box-content">
+                <h3 class="approach__box-title title-1">наш подход</h3>
+                <img class="approach__box-img" src="images/approach-icon-1.png" alt="">
+                <p class="approach__box-text">«Рынок может оставаться иррациональным дольше, чем вы сможете оставаться
+                  платежеспособным»
+                </p>
+                <p class="approach__box-author">Джон Мейнард Кейнс</p>
+              </div>
+              <img class="approach__box-image" src="images/approach-img.png" alt="">
+            </div>
+            <div class="approach__items">
+              <div class="approach__item approach__item-1">
+                <h4 class="approach__item-title">УПРАВЛЕНИЕ РИСКАМИ</h4>
+                <p class="approach__item-text">Чтобы управлять рыночными рисками
+                  мы используем портфельный подход в инвестициях
+                  и планово набираем акции в портфель под конкретную инвестиционную цель и рыночную ситуацию.
+                </p>
+              </div>
+              <div class="approach__item approach__item-2">
+                <h4 class="approach__item-title">ПРОГНОЗ ФАЗ РОСТА И ПАДЕНИЯ РЫНКОВ</h4>
+                <p class="approach__item-text">Очень точно анализируем и прогнозируем циклы
+                  роста и падения основных фондовых индексов
+                  и знаем, когда лучше находиться вне рынка и выждать, чтобы затем купить акции дешевле
+                </p>
+              </div>
+              <div class="approach__item approach__item-3">
+                <h4 class="approach__item-title">СОВМЕЩЕНИЕ ФУНДАМЕНТАЛЬНОГО И ВОЛНОВОГО АНАЛИЗА</h4>
+                <p class="approach__item-text">При выборе инвест-идей мы опираемся
+                  на ключевые показатели финансовой отчетности
+                  и значимые макро-тренды. После этого мы применяем методику волнового анализа, которая позволяет
+                  определять фазы роста и падения рыночных активов.
+                </p>
+              </div>
+              <div class="approach__item approach__item-4">
+                <h4 class="approach__item-title">БОЛЬШОЙ ВЫБОР
+                  ПРИБЫЛЬНЫХ ТОРГОВЫХ ИДЕЙ</h4>
+                <p class="approach__item-text">Тщательно отбираем и анализируем более
+                  100 перспективных акций американского фондового рынка и прогнозируем потенциалы роста/коррекции и
+                  оптимальные точки для набора позиции
+                  по каждой акции
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quality">
+        <div class="container">
+          <div class="quality__inner">
+            <div class="quality__box">
+              <h3 class="quality__box-title title-1">качество 100%</h3>
+              <p class="quality__box-text">Хотите узнать состав портфеля
+                на котором онлайн-советник AURUM планирует заработать 30% годовых ?
+              </p>
+              <p class="quality__box-desc">это можно сделать бесплатно:
+              </p>
+              <a class="quality__box-btn" href="#">Хочу узнать</a>
+            </div>
+            <img class="quality__img" src="images/quality-img.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="team" id="team">
+        <div class="container">
+          <h2 class="team__title title-1">команда</h2>
+          <div class="team__items team__slider">
+            <div class="team__item">
+              <div class="team__item-left">
+                <p class="team__item-left-name">сергей быков</p>
+                <img src="images/team-foto-1.png" alt="" class="team__item-left-foto">
+              </div>
+              <div class="team__item-right">
+                <p class="team__item-right-text">Имеет более 18 лет успешной управленческой карьеры
+                  в российских и международных компаниях: Inform-Mobil, Ivi.ru, Tele2, Deezer. Приобрел практическую
+                  управленческую экспертизу в telecom/media/tech индустриях по развитию бизнеса и инвестиционной оценке
+                  запуска новых направлений, выхода на новые рынки и разработки новых продуктов
+                </p>
+                <p class="team__item-right-text item__text-1">Первое образование - «Экономист», второе - «Маркетинг
+                  Менеджмент» на
+                  базе
+                  MIRBIS и затем full-time MBA
+                  в University of Oxford, где изучал, среди прочих, ряд финансовых дисциплин: Corporate Finance, Venture
+                  Capital Finance, Corporate Valuation, Private Equity, Financial Modelling
+                </p>
+                <button class="team__item-right-btn-1">Читать полностью</button>
+                <img class="team__item-right-logo team__logo-1" src="images/logo-oxford.png" alt="">
+              </div>
+            </div>
+            <div class="team__item">
+              <div class="team__item-left">
+                <p class="team__item-left-name">Сергей Ахметов</p>
+                <img src="images/team-foto-2.png" alt="" class="team__item-left-foto">
+              </div>
+              <div class="team__item-right">
+                <p class="team__item-right-text">Имеет более 18 лет успешной управленческой карьеры
+                  в российских и международных компаниях: Inform-Mobil, Ivi.ru, Tele2, Deezer. Приобрел практическую
+                  управленческую экспертизу в telecom/media/tech индустриях по развитию бизнеса и инвестиционной оценке
+                  запуска новых направлений, выхода на новые рынки и разработки новых продуктов
+                </p>
+                <p class="team__item-right-text item__text-2">Первое образование - «Экономист», второе - «Маркетинг
+                  Менеджмент» на базе
+                  MIRBIS и затем full-time MBA
+                  в University of Oxford, где изучал, среди прочих, ряд финансовых дисциплин: Corporate Finance, Venture
+                  Capital Finance, Corporate Valuation, Private Equity, Financial Modelling
+                </p>
+                <button class="team__item-right-btn-2">Читать полностью</button>
+                <img class="team__item-right-logo team__logo-2" src="images/ogo-mifi.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="choose" id="tariff">
+        <div class="container">
+          <h2 class="choose__title title-1">ВЫБЕРИТЕ ПОДХОДЯЩИЙ ТАРИФ <span>чтобы получить максимальную
+              выгоду от инвестиций!</span></h2>
+          <p class="choose__text"></p>
+          <div class="choose__items">
+            <div class="choose__item">
+              <div class="choose__item-content">
+                <h3 class="choose__item-title">ARGENTUM</h3>
+                <p class="choose__item-subtitle">ОНЛАЙН СОВЕТНИК</p>
+              </div>
+              <div class="choose__item-box">
+                <p class="choose__item-box-point">Выбирает лучшие <span>НЕДОРОГИЕ</span> акции для портфелей на
+                  <span>100 000р</span>
+                </p>
+                <p class="choose__item-box-point">
+                  Прогнозы фаз роста и падения
+                  основных фондовых индексов
+                </p>
+                <p class="choose__item-box-point">
+                  Модельный инвест-портфель
+                  клуба STOKHOLD
+                </p>
+                <p class="choose__item-box-point">
+                  Доступ в закрытый клуб инвесторов: Telegram канал & Чат
+                </p>
+                <p class="choose__item-box-point">
+                  Торговый план для 100 акций американского рынка
+                </p>
+              </div>
+              <p class="choose__item-box-point choose__item-idea">
+                10 идей с потенциальной
+                доходностью > 50% годовых
+              </p>
+              <p class="choose__item-price">
+                799 <span>руб/мес</span>
+              </p>
+              <a class="choose__item-btn" href="#">Выбрать</a>
+            </div>
+            <div class="choose__item-center">
+              <div class="choose__item-content">
+                <h3 class="choose__item-title">AURUM</h3>
+                <p class="choose__item-subtitle">ОНЛАЙН СОВЕТНИК</p>
+              </div>
+              <div class="choose__item-box">
+                <p class="choose__item-box-point">Выбирает <span>ЛУЧШИЕ</span> акции для портфелей от <span>300
+                    000р</span>
+                </p>
+                <p class="choose__item-box-point">
+                  Автоматически управляет рисками и доходностью портфеля
+                </p>
+                <p class="choose__item-box-point">
+                  Уведомляет по E-mail & Telegram
+                  о покупке и продаже акций
+                </p>
+                <p class="choose__item-box-point">
+                  Ведет и показывает учет всех сделок в личном кабинете
+                </p>
+                <p class="choose__item-box-point">
+                  Дает доступ к аналитике по портфелю в личном кабинете
+                </p>
+              </div>
+              <p class="choose__item-box-point  choose__item-idea">
+                Ожидаемая годовая доходность
+                портфеля около 30% годовых
+              </p>
+              <p class="choose__item-price choose__item-price-center">
+                1499 <span>руб/мес</span>
+              </p>
+              <a class="choose__item-btn" href="#">Выбрать</a>
+            </div>
+            <div class="choose__item">
+              <div class="choose__item-content">
+                <h3 class="choose__item-title">PLATINUM</h3>
+                <p class="choose__item-subtitle">100% AURUM ПЛЮС
+                  ИНВЕСТ КЛУБ:</p>
+              </div>
+              <div class="choose__item-box">
+                <p class="choose__item-box-point">Фундаментальная и волновая
+                  аналитика для более 100 акций
+                </p>
+                <p class="choose__item-box-point">
+                  Прогнозы фаз роста и падения
+                  основных фондовых индексов
+                </p>
+                <p class="choose__item-box-point">
+                  Модельный инвест-портфель
+                  клуба STOKHOLD
+                </p>
+                <p class="choose__item-box-point">
+                  Доступ в закрытый клуб инвесторов: Telegram канал & Чат
+                </p>
+                <p class="choose__item-box-point">
+                  Торговый план для 100 акций американского рынка
+                </p>
+              </div>
+              <p class="choose__item-box-point choose__item-idea">
+                10 идей с потенциальной
+                доходностью > 50% годовых
+              </p>
+              <p class="choose__item-price">
+                2999 <span>руб/мес</span>
+              </p>
+              <a class="choose__item-btn" href="#">Выбрать</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions" id="questions">
+        <div class="container">
+          <h2 class="questions__title choose__title title-1">Остались вопросы
+            по продукту?
+            <span>Вот ответы, которые помогут принять решение</span>
+          </h2>
+          <div class="questions__items">
+            <div class="questions__item">
+              <h4 class="questions__item-title" data-name="accordeon-title">
+                Каковы гарантии достижения 30% годовой доходности?
+              </h4>
+              <p class="questions__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur incidunt fuga accusantium
+                vitae perspiciatis cum, soluta, commodi qui ipsam consectetur rerum modi deserunt hic, totam adipisci in
+                rem eaque.
+              </p>
+            </div>
+            <div class="questions__item">
+              <h4 class="questions__item-title" data-name="accordeon-title">
+                Как работает ваш продукт?
+              </h4>
+              <p class="questions__item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur incidunt fuga accusantium
+                vitae perspiciatis cum, soluta, commodi qui ipsam consectetur rerum modi deserunt hic, totam adipisci in
+                rem eaque.
+              </p>
+            </div>
+            <div class="questions__item">
+              <h4 class="questions__item-title" data-name="accordeon-title">Можно просто наблюдать как работает
+                онлайн-советник и не использовать его действия в личных инвестициях?
+              </h4>
+              <p class="questions__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                tenetur incidunt fuga accusantium vitae perspiciatis cum, soluta, commodi qui ipsam consectetur rerum
+                modi deserunt hic, totam adipisci in rem eaque.</p>
+            </div>
+            <div class="questions__item">
+              <h4 class="questions__item-title" data-name="accordeon-title">Вы берете деньги в управление?
+              </h4>
+              <p class="questions__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                tenetur incidunt fuga accusantium vitae perspiciatis cum, soluta, commodi qui ipsam consectetur rerum
+                modi deserunt hic, totam adipisci in rem eaque.</p>
+            </div>
+            <div class="questions__item">
+              <h4 class="questions__item-title" data-name="accordeon-title">Кому не подходит ваш продукт?
+              </h4>
+              <p class="questions__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                tenetur incidunt fuga accusantium vitae perspiciatis cum, soluta, commodi qui ipsam consectetur rerum
+                modi deserunt hic, totam adipisci in rem eaque.</p>
+            </div>
+            <div class="questions__item">
+              <h4 class="questions__item-title" data-name="accordeon-title">Вы даете Индивидуальные Инвестиционные
+                Рекомендации (ИИР)?
+              </h4>
+              <p class="questions__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                tenetur incidunt fuga accusantium vitae perspiciatis cum, soluta, commodi qui ipsam consectetur rerum
+                modi deserunt hic, totam adipisci in rem eaque.</p>
+            </div>
+            <div class="questions__item">
+              <h4 class="questions__item-title" data-name="accordeon-title">Если я из другой страны – мне подойдет ваш
+                продукт?
+              </h4>
+              <p class="questions__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                tenetur incidunt fuga accusantium vitae perspiciatis cum, soluta, commodi qui ipsam consectetur rerum
+                modi deserunt hic, totam adipisci in rem eaque.</p>
+            </div>
+            <div class="questions__item">
+              <h4 class="questions__item-title" data-name="accordeon-title">Как мне успеть точно повторить все покупки
+                онлайн-советника?
+              </h4>
+              <p class="questions__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                tenetur incidunt fuga accusantium vitae perspiciatis cum, soluta, commodi qui ipsam consectetur rerum
+                modi deserunt hic, totam adipisci in rem eaque.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <h2 class="reviews__title title-1">
+            отзывы
+          </h2>
+          <div class="reviews__items">
+            <div class="reviews__item">
+              <div class="reviews__item-top">
+                <img class="reviews__item-top-img" src="images/reviev-woman.png" alt="" height="100px" width="74">
+                <div class="reviews__item-block">
+                  <p class="reviews__item-block-name">Светлана, 41 год</p>
+                  <p class="reviews__item-block-info">Маркетолог, г.Москва</p>
+                </div>
+              </div>
+              <p class="reviews__item-text">Cupidatat consequat velit culpa sunt in aliquip ipsum occaecat laboris ea
+                irure laborum incididunt exercitation. Culpa aute sunt reprehenderit occaecat excepteur sunt non tempor
+                in velit nulla. Est quis cupidatat elit in mollit
+              </p>
+              <a class="reviews__item-btn" href="#">Смотреть отзыв</a>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-top">
+                <img class="reviews__item-top-img" src="images/reviev-man.png" alt="">
+                <div class="reviews__item-block">
+                  <p class="reviews__item-block-name">Иван, 35 лет</p>
+                  <p class="reviews__item-block-info">Технолог, г.Москва</p>
+                </div>
+              </div>
+              <p class="reviews__item-text">Cupidatat consequat velit culpa sunt in aliquip ipsum occaecat laboris ea
+                irure laborum incididunt exercitation. Culpa aute sunt reprehenderit occaecat excepteur sunt non tempor
+                in velit nulla. Est quis cupidatat elit in mollit
+              </p>
+              <a class="reviews__item-btn" href="#">Смотреть отзыв</a>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-top">
+                <img class="reviews__item-top-img" src="images/reviev-man.png" alt="">
+                <div class="reviews__item-block">
+                  <p class="reviews__item-block-name">Сергей, 31 год</p>
+                  <p class="reviews__item-block-info">Бухгалтер, г.Москва</p>
+                </div>
+              </div>
+              <p class="reviews__item-text">Cupidatat consequat velit culpa sunt in aliquip ipsum occaecat laboris ea
+                irure laborum incididunt exercitation. Culpa aute sunt reprehenderit occaecat excepteur sunt non tempor
+                in velit nulla. Est quis cupidatat elit in mollit
+              </p>
+              <a class="reviews__item-btn" href="#">Смотреть отзыв</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="more" id="more">
+        <div class="container">
+          <h2 class="more__title title-1">
+            больше об инвестициях
+          </h2>
+          <div class="more__items">
+            <div class="more__item">
+              <img class="more__item-img" src="images/more-1.jpg" alt="">
+              <h4 class="more__item-title">Пропустили биткойн?
+                Вот криптовалюта, чтобы купить сейчас и держать
+              </h4>
+              <p class="more__item-text">Ключевые моменты Ethereum - это программируемый блокчейн, функция, которая
+                позволяет использовать продукты децентрализованного...
+              </p>
+            </div>
+            <div class="more__item">
+              <img class="more__item-img" src="images/more-2.jpg" alt="">
+              <h4 class="more__item-title">Инвест-тезис: "Лидер рынка"
+              </h4>
+              <p class="more__item-text">В последние дни на рынке очень сильно “льют” high growth tech stocks (акции
+                роста - технологические компании). И вчера в закрытом канале...
+              </p>
+            </div>
+            <div class="more__item">
+              <img class="more__item-img" src="images/more-2.jpg" alt="">
+              <h4 class="more__item-title">Инвест-тезис: "Лидер рынка"
+              </h4>
+              <p class="more__item-text">В последние дни на рынке очень сильно “льют” high growth tech stocks (акции
+                роста - технологические компании). И вчера в закрытом канале...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="logo__block">
+            <picture class="logo__img">
+              <source srcset="images/footer__logo-mini.png" media="(max-width: 1024px)">
+              <img src="images/footer__logo.png" alt="">
+            </picture>
+            <div class="logo__text">
+              <p class="logo__text-name">stokhold</p>
+              <p class="logo__text-slogan">МОИ ИНВЕСТИЦИИ - МОЯ КРЕПОСТЬ</p>
+            </div>
+            <ul class="logo__social">
+              <li class="logo__social-item">
+                <a class="logo__social-item-link" href="#">
+                  <img class="logo__social-item-img" src="images/insta-footer-mini.png" alt="">
+                </a>
+              </li>
+              <li class="logo__social-item">
+                <a class="logo__social-item-link" href="#">
+                  <img class="logo__social-item-img" src="images/telegramm-footer-mini.png" alt="">
+                </a>
+              </li>
+              <li class="logo__social-item">
+                <a class="logo__social-item-link" href="#">
+                  <img class="logo__social-item-img" src="images/email-footer-mini.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content">
+            <div class="footer__content-top">
+              <nav class="footer__menu">
+                <h4 class="footer__menu-title">меню</h4>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#for-whom">Об онлайн-советнике</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#promotion">Попробовать бесплатно</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#work">Как работает советник</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#for-what">Для чего?</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#for-whom">Для кого?</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#approach">Наш подход</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#team">Команда</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#tariff">Тарифы</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#more">Статьи</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#questions">Частые вопросы</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__contacts">
+                <h4 class="footer__contacts-title">контакты</h4>
+                <div class="footer__contacts-top">
+                  <a class="footer__contacts-top-phone" href="tel:+79261337547">Тел: +7 (926) 133-75-47
+                  </a>
+                  <a class="footer__contacts-top-email" href="mailto:stronghold@stronghld.ru">E-mail:
+                    stronghold@stronghld.ru
+                  </a>
+                  <a class="footer__contacts-top-adress" href="#">Адрес: 115 280, г. Москва,
+                    ул. Ленинская слобода,д. 26, этаж 4, офис 16.
+                  </a>
+                </div>
+                <ul class="footer__social">
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-item-link">
+                      <img class="footer__social-item-img" src="images/insta-footer.png" alt="">
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-item-link">
+                      <img class="footer__social-item-img" src="images/telegramm-footer.png" alt="">
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-item-link">
+                      <img class="footer__social-item-img" src="images/email-footer.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__info">
+                <div class="req">
+                  <h4 class="req__title">реквизиты</h4>
+                  <ul class="req__list">
+                    <li class="req__list-item">
+                      <p class="req__list-item-text">
+                        ООО «СТРОНГХОЛД ИНВЕСТ КЛУБ»
+                      </p>
+                    </li>
+                    <li class="req__list-item">
+                      <p class="req__list-item-text">
+                        ИНН 9725054539
+                      </p>
+                    </li>
+                    <li class="req__list-item">
+                      <p class="req__list-item-text">
+                        КПП 772501001
+                      </p>
+                    </li>
+                    <li class="req__list-item">
+                      <p class="req__list-item-text">
+                        ОГРН 1217700319528
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="users">
+                  <h4 class="users__title">пользователям</h4>
+                  <ul class="users__list">
+                    <li class="users__list-item">
+                      <a class="users__list-link" href="#">
+                        Пользовательское соглашение
+                      </a>
+                    </li>
+                    <li class="users__list-item">
+                      <a class="users__list-link" href="#">
+                        Политика конфеденциальности
+                      </a>
+                    </li>
+                    <li class="users__list-item">
+                      <a class="users__list-link" href="#">
+                        Договор оферты
+                      </a>
+                    </li>
+                    <li class="users__list-item">
+                      <a class="users__list-link" href="#">
+                        Отказ от ответственности
+                      </a>
+                    </li>
+                    <li class="users__list-item">
+                      <a class="users__list-link" href="#">
+                        Согласие на сохранение данных
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer__content-bottom">
+              <p class="dev">Разработка сайта Semenova</p>
+              <ul class="pay-list">
+                <li class="pay-item">
+                  <a class="pay-link" href="#">
+                    <img class="pay-img pay-img-mir" src="images/mir-icon.png" alt="">
+                  </a>
+                </li>
+                <li class="pay-item">
+                  <a class="pay-link" href="#">
+                    <img class="pay-img pay-img-visa" src="images/visa-icon.png" alt="">
+                  </a>
+                </li>
+                <li class="pay-item">
+                  <a class="pay-link" href="#">
+                    <img class="pay-img pay-img-master" src="images/mastercard-icon.png" alt="">
+                  </a>
+                </li>
+                <li class="pay-item">
+                  <a class="pay-link" href="#">
+                    <img class="pay-img pay-img-gpay" src="images/g-pay-icon.png" alt="">
+                  </a>
+                </li>
+                <li class="pay-item">
+                  <a class="pay-link" href="#">
+                    <img class="pay-img pay-img-applepay" src="images/apple-pay-icon.png" alt="">
+                  </a>
+                </li>
+                <li class="pay-item">
+                  <a class="pay-link" href="#">
+                    <img class="pay-img pay-img-tinkoff" src="images/tinkoff-icon.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
